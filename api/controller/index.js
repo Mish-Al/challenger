@@ -17,7 +17,7 @@ routes.post("register", bodyParser.json(), (req, res) => {
 routes.put("/user/:id", bodyParser.json(), (req, res) => {
   users.updateUser(req, res);
 });
-routes.patch("/user/:id", bodyParser.json(), (req, res) => {
+routes.patch("/user/:id", bodyParser.json(), (req, res) => { 
   users.updateUser(req, res);
 });
 routes.delete("/user/:id", (req, res) => {
@@ -29,7 +29,4 @@ module.exports = {
     routes
 }
 
-// routes.get('^/$|/challenger', (req, res)=>{
-//     res.sendFile(path.resolve(__dirname,
-//         "../static/html/index.html"))
-// })
+
